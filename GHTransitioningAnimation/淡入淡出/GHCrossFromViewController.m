@@ -7,8 +7,10 @@
 //
 
 #import "GHCrossFromViewController.h"
+#import "GHCrossAnimation.h"
+#import "GHCrossToViewController.h"
 
-@interface GHCrossFromViewController ()
+@interface GHCrossFromViewController ()<UIViewControllerTransitioningDelegate>
 
 @end
 
@@ -17,16 +19,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor redColor];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    GHCrossToViewController *crossToVc = [[GHCrossToViewController alloc]init];
+    crossToVc.modalPresentationStyle = UIModalPresentationFullScreen;
+    crossToVc.transitioningDelegate = self;
+    
+    [self presentViewController:crossToVc animated:YES completion:nil];
+
 }
-*/
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return [GHCrossAnimation new];
+}
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return [GHCrossAnimation new];
+
+}
+
 
 @end
