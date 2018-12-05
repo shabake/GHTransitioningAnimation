@@ -13,6 +13,8 @@
 		0482792021B7E686006C1772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0482791F21B7E686006C1772 /* Assets.xcassets */; };
 		0482792321B7E686006C1772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0482792121B7E686006C1772 /* LaunchScreen.storyboard */; };
 		0482792621B7E686006C1772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0482792521B7E686006C1772 /* main.m */; };
+		04AE4E8721B7EBF900781389 /* GHCrossFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE4E8621B7EBF900781389 /* GHCrossFromViewController.m */; };
+		04AE4E8A21B7EC0500781389 /* GHCrossToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AE4E8921B7EC0500781389 /* GHCrossToViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		0482792221B7E686006C1772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0482792421B7E686006C1772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0482792521B7E686006C1772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04AE4E8521B7EBF900781389 /* GHCrossFromViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHCrossFromViewController.h; sourceTree = "<group>"; };
+		04AE4E8621B7EBF900781389 /* GHCrossFromViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHCrossFromViewController.m; sourceTree = "<group>"; };
+		04AE4E8821B7EC0500781389 /* GHCrossToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHCrossToViewController.h; sourceTree = "<group>"; };
+		04AE4E8921B7EC0500781389 /* GHCrossToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHCrossToViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		0482791521B7E685006C1772 /* GHTransitioningAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				0482792C21B7E7F1006C1772 /* 淡入淡出 */,
 				0482791621B7E685006C1772 /* AppDelegate.h */,
 				0482791721B7E685006C1772 /* AppDelegate.m */,
 				0482791921B7E685006C1772 /* ViewController.h */,
@@ -69,6 +76,17 @@
 				0482792521B7E686006C1772 /* main.m */,
 			);
 			path = GHTransitioningAnimation;
+			sourceTree = "<group>";
+		};
+		0482792C21B7E7F1006C1772 /* 淡入淡出 */ = {
+			isa = PBXGroup;
+			children = (
+				04AE4E8521B7EBF900781389 /* GHCrossFromViewController.h */,
+				04AE4E8621B7EBF900781389 /* GHCrossFromViewController.m */,
+				04AE4E8821B7EC0500781389 /* GHCrossToViewController.h */,
+				04AE4E8921B7EC0500781389 /* GHCrossToViewController.m */,
+			);
+			path = "淡入淡出";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AE4E8A21B7EC0500781389 /* GHCrossToViewController.m in Sources */,
 				0482791B21B7E685006C1772 /* ViewController.m in Sources */,
 				0482792621B7E686006C1772 /* main.m in Sources */,
+				04AE4E8721B7EBF900781389 /* GHCrossFromViewController.m in Sources */,
 				0482791821B7E685006C1772 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
