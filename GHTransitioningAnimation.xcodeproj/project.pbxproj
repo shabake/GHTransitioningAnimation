@@ -67,6 +67,7 @@
 		0482791521B7E685006C1772 /* GHTransitioningAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				D650CCD921C25A1500EC004A /* 右滑拉出 */,
 				0482792C21B7E7F1006C1772 /* 淡入淡出 */,
 				0482791621B7E685006C1772 /* AppDelegate.h */,
 				0482791721B7E685006C1772 /* AppDelegate.m */,
@@ -92,6 +93,13 @@
 				04AE4E8C21B7EE8B00781389 /* GHCrossAnimation.m */,
 			);
 			path = "淡入淡出";
+			sourceTree = "<group>";
+		};
+		D650CCD921C25A1500EC004A /* 右滑拉出 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "右滑拉出";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
